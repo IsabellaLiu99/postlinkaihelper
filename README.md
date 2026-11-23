@@ -8,7 +8,6 @@ This package provides two main functions:
 
 - **`explain()`** — generates a plain-language interpretation of linkage-corrected model results using an LLM
 - **`generate_report()`** — produces a formatted analysis report (Markdown, HTML, Quarto, or Quarto manuscript)
-- **`preflight_check()`** — runs linkage-specific data quality checks before model fitting
 
 ## Installation
 
@@ -38,14 +37,6 @@ generate_report(fit,
   output_file   = "report.html",
   provider      = "openai",
   api_key       = Sys.getenv("OPENAI_API_KEY")
-)
-
-# Pre-flight data quality check
-preflight_check(
-  linked_data = lifem,
-  outcome     = "age_at_death",
-  match_prob  = fit$match.prob,
-  method      = "adjMixture"
 )
 ```
 

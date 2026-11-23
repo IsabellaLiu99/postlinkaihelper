@@ -9,8 +9,7 @@ Description: Provides AI-assisted interpretation and reporting tools for the
     linkage-corrected model results, and generate_report() for producing
     formatted analysis reports. Supports multiple LLM providers (OpenAI,
     Anthropic, Google Gemini, Ollama) and output formats (Markdown, HTML,
-    Quarto, Quarto manuscript). Also includes preflight_check() for
-    linkage-specific data quality diagnostics before model fitting.
+    Quarto, Quarto manuscript).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

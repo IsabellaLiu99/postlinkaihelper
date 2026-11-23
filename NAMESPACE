@@ -2,7 +2,6 @@
 
 export(explain)
 export(generate_report)
-export(preflight_check)
 importFrom(stats,sd)
 importFrom(stats,pnorm)
 importFrom(utils,setTxtProgressBar)
